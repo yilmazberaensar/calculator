@@ -8,11 +8,15 @@
 </head>
 <body>
     <div>
-        <h1>Taschenrechner</h1>
-    </div>
-    <div>
-        <input id="output" type="number" readonly>
+    <h1>Taschenrechner</h1>
+</div>
+
+<!-- NEU: Dieser Wrapper hält den ganzen Rechner zusammen -->
+<div class="calculator">
+    <div class="output">
+        <input id="output" type="text" readonly>
         <button class="gleich">=</button>
+        <button class="reset">CE</button>
     </div>
     <div class="zifferblock">
         <button class="zbutton">1</button>
@@ -25,6 +29,7 @@
         <button class="zbutton">8</button>
         <button class="zbutton">9</button>
         <button class="zbutton">0</button>
+        <button class="zbutton">.</button>
     </div>
     <div class="operatoren">
         <button class="op">+</button>
@@ -32,7 +37,7 @@
         <button class="op">*</button>
         <button class="op">/</button>
     </div>
-
+</div>
 </body>
 <script src="main.js"></script>
 </html>
